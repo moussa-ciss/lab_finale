@@ -1,0 +1,48 @@
+CC = gcc
+	OBJ = max.o min.o variance.o
+	HOME = /home/moussa
+	DEBUG=yes
+	CC = gcc
+	Mode =
+
+ifeq (${DEBUG},yes)
+		CC_OPTIONS = -g -Wall
+		Mode = "Compilation en mode debug"
+else
+		CC_OPTIONS =
+		Mode = "Compilation en mode release"
+
+endif
+COMPILATION_MODE :
+		echo ${Mode}
+max.o : max.c
+		${CC} ${CC_OPTIONS} -c $^ -o $@
+
+min.o : min.c
+		${CC} ${CC_OPTIONS} -c $^ -o $@
+
+variance.o : variance.c
+		${CC} ${CC_OPTIONS} -c $^ -o $@
+
+test.o : test.c
+		${CC} ${CC_OPTIONS} -c $^ -o $@
+
+My-binaire : ${OBJ} test.o
+		${CC} -o $@ ${OBJ} test.o 
+
+Install : My-binaire
+		install $^ ${HOME}
+
+clean : ${OBJ} test.o
+		rm *.o
+
+DEBUG=yes
+	CC = gcc
+	OBJ = max.o min.o variance.o
+	HOME = /home/moussa
+
+	ifeq (${DEBUG},yes)
+		CC_OPTIONS = -g -Wall
+	else
+		CC_OPTIONS =
+	endif

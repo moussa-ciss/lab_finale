@@ -1,0 +1,8 @@
+ lab5.txt
+ Question1:
+  Avec la commande touch on cree un fichier master.sh.
+  on a indiqué le type de shell avec #!/bin/bash 
+  la commande ls permet de lister les fichiers se trouvant dans le repertoire courant. Pwd affiche le chemin du repertoire 
+  chmod 777 permet de donner le droit d'execution
+ Question 2:
+ 

@@ -1,0 +1,12 @@
+oussa@moussa-VirtualBox:~/Bureau/lab9$ locate libm.so
+/snap/core18/1880/lib/i386-linux-gnu/libm.so.6
+/snap/core18/1880/lib/x86_64-linux-gnu/libm.so.6
+/snap/core18/1932/lib/i386-linux-gnu/libm.so.6
+/snap/core18/1932/lib/x86_64-linux-gnu/libm.so.6
+/snap/gnome-3-34-1804/36/usr/lib/x86_64-linux-gnu/libm.so
+/snap/gnome-3-34-1804/60/usr/lib/x86_64-linux-gnu/libm.so
+/snap/snapd/10238/lib/x86_64-linux-gnu/libm.so.6
+/snap/snapd/10492/lib/x86_64-linux-gnu/libm.so.6
+/usr/lib/x86_64-linux-gnu/libm.so
+/usr/lib/x86_64-linux-gnu/libm.so.6
+
