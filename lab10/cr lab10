@@ -14,7 +14,7 @@ max.o : max.c
 		gcc -o My-binaire max.o min.o variance.o test.o
 
 	Install : My-binaire
-		install My-binaire /home/katitoudj
+		install My-binaire /home/moussa
 
 	clean : max.o min.o variance.o test.o
 		rm *.o
